@@ -1,0 +1,43 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="800">
+	<defs>
+		<path id="trim" d="M0,0v300c0,212.3,101.5,402,350,500c248.5-98,350-287.7,350-500V0H0z"/>
+		<clipPath id="trim_out">
+			<use xlink:href="#trim"/>
+		</clipPath>
+		<polygon id="edge_i" points="348.5,450 351.5,450 350,500 351.5,550 348.5,550 350,500" fill="#850"/>
+	</defs>
+	<g clip-path="url(#trim_out)">
+		<rect width="700" height="800" fill="#461"/>
+		<path d="M525.3,348.8c-32-50.1-87.1-85.3-151.3-92.5V150c10.6,26.9,33.3,59.7,61,95c39.7-5.7,67.1-17.1,85-33
+	c-81-51-126-105-170-167c-44,62-89,116-170,167c17.9,15.9,45.3,27.3,85,33c27.7-35.3,50.4-68.1,61-95v106.3
+	c-64.1,7.1-119.2,42.4-151.3,92.5c-20.8,36-30.3,45.6-59.7,63.2c38.4,27.4,92,28,125.4,12.6c-0.3-3.2-0.4-6.4-0.4-9.6
+	c0-52.5,36.8-96.4,86-107.4V370h48v-62.4c49.2,11,86,54.9,86,107.4c0,3.2-0.1,6.4-0.4,9.6C493,440,546.6,439.4,585,412
+	C555.6,394.4,546,384.8,525.3,348.8z" fill="#fc0" stroke="#850" stroke-width="4"/>
+		<g id="edge_a" fill="#850">
+			<path d="M324,150c0-16.8,1.7-33.2,11-45c-8.2,14.2-7,23.2-7,45H324z"/>
+			<path id="edge_a1" d="M326,254.3c7.4,0,12.1,10.6,12.5,21.6c-1.9-7.7-5.2-17.6-12.5-17.6V254.3z"/>
+			<use xlink:href="#edge_a1" transform="scale(1 -1)" y="-563.9"/>
+		</g>
+		<use xlink:href="#edge_a" transform="scale(-1 1)" x="-700"/>
+		<polygon points="350,385 369.13,453.81 431.32,418.68 396.19,480.87 465,500 396.19,519.13 431.32,581.32
+	369.13,546.19 350,615 330.87,546.19 268.68,581.32 303.81,519.13 235,500 303.81,480.87 268.68,418.68
+	330.87,453.81" fill="#fc0" stroke="#850" stroke-width="4" stroke-linejoin="round"/>
+		<g id="edge">
+			<polygon points="350,386 351.5,500 350,614 348.5,500" fill="#850"/>
+			<use xlink:href="#edge_i" transform="rotate(22.5 350 500)"/>
+		</g>
+		<use xlink:href="#edge" transform="rotate(45 350 500)"/>
+		<use xlink:href="#edge" transform="rotate(90 350 500)"/>
+		<use xlink:href="#edge" transform="rotate(135 350 500)"/>
+		<path d="M180.1,485.46 a170 170 0 1 0 339.8 0 a180 180 0 1 1 -339.8 0z" fill="#fc0" stroke="#850" stroke-width="4" stroke-linejoin="round"/>
+		<path d="M180.1,485.46 a172.72 172.72 0 1 0 339.8 0 a173.34 173.34 0 1 1 -339.8 0z" fill="#850"/>
+		<g clip-path="url(#trim_out)">
+			<use xlink:href="#trim" fill="none" stroke="#036" stroke-width="50"/>
+			<use xlink:href="#trim" fill="none" stroke="#05b" stroke-width="40"/>
+			<use xlink:href="#trim" fill="none" stroke="#036" stroke-width="10"/>
+		</g>
+	</g>
+</svg>

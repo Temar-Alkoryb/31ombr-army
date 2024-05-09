@@ -1,0 +1,48 @@
+.section {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  padding-top: 50px;
+  background-image: url("../../../assets/green_smoke_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  position: absolute;
+  bottom: 6em;
+  left: 1em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  @media (min-width: 768px) {
+    left: 3em;
+  }
+}
+
+.sec-title {
+  font-size: 4em;
+  color: orange;
+  opacity: 0.5;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  @media (min-width: 500px) {
+    font-size: 5em;
+  }
+  @media (min-width: 1440px) {
+    font-size: 6em;
+  }
+}
+
+.nav-link {
+  color: #fff;
+  border: 1px solid #f5eaca;
+  border-radius: 4px;
+  padding: 10px 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

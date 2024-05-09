@@ -1,0 +1,58 @@
+
+.content{
+  display: grid;
+  grid-row-gap: 50px;
+  padding-bottom: 50px;
+  border-bottom: 3px solid #F2B807;
+  margin-bottom: 50px;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 45px;
+  }
+}
+ 
+.img-bg {
+  position: relative;
+ 
+  height: 350px;
+  background-color: black;
+  background-image: url("../../../assets/green_smoke_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(2px 4px 6px black);
+  @media (min-width: 768px) {
+    width: 350px;
+  }
+}
+
+.hero-img{
+  object-fit: cover;
+  width: 317px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  object-position: right;
+  bottom: -32px;
+  left: 16px;
+
+  @media (min-width: 500px) {
+    height: 330px;
+    width: 440px;
+    bottom: -12px;
+    left: 16px;
+  }
+}
+
+
+.title {
+  font-size: 35px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #f5eaca;
+}
+
+.text {
+  font-size: 16px;
+}
+

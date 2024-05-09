@@ -1,0 +1,11 @@
+.link {
+  background-color: #f2b807;
+  color: #151a1a;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
