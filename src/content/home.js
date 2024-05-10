@@ -1,27 +1,23 @@
-import Header from "../content/components/Header";
-import MainSection from "../content/components/MainSection";
-import AboutUs from "../content/components/AboutUs";
-import OurValues from "../content/components/OurValues";
-import Vacancy from "../content/components/Vacancy";
-import Contacts from "../content/components/Contacts"
-import Footer from "../content/components/Footer";
+import MainSection from "./components/MainSection";
+import AboutUs from "./components/AboutUs";
+import OurValues from "./components/OurValues";
+import Vacancy from "./components/Vacancy";
+import Contacts from "./components/Contacts";
+import Gallery from "./components/Gallery"
 
-import aboutUsData from "../content/aboutUs.json";
-import ourValuesData from "../content/ourValues.json";
-import vacancyData from "../content/vacancy.json";
+import aboutUsData from "./aboutUs.json";
+import ourValuesData from "./ourValues.json";
+import vacancyData from "./vacancy.json";
 
 function Home() {
   return (
     <>
-      <main>
-        <Header />
-        <MainSection />
-        <AboutUs aboutUsData={aboutUsData} />
-        <OurValues ourValuesData={ourValuesData} />
-        <Vacancy vacancyData={vacancyData} />
-        <Contacts/>
-      </main>
-      <Footer />
+      <MainSection />
+      <AboutUs aboutUsData={aboutUsData} />
+      <OurValues ourValuesData={ourValuesData} />
+      <Vacancy vacancyData={vacancyData} />
+      <Gallery/>
+      <Contacts />
     </>
   );
 }

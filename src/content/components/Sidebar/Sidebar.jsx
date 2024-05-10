@@ -1,8 +1,10 @@
-import React from "react";
+"use client"
 import { IoMdClose } from "react-icons/io";
 import Join from "../Join/Join";
 import logo from "../../../assets/main-logo.svg";
 import Image from "next/image";
+import style from "./Sidebar.module.css"
+import Link from "next/link";
 
 function Sidebar({ handleClickClose }) {
   const NAV_ITEMS = [
@@ -12,34 +14,40 @@ function Sidebar({ handleClickClose }) {
     { path: "#Contacts", name: "Контакти" },
   ];
   return (
-    <div id="backdrop">
+    <div id="backdrop" className={style.backdrop}>
       <div className="container">
-        <div>
+        <div className={style['menu-content']}>
+          <div className={style.close}>
           <IoMdClose size={40} onClick={handleClickClose} />
-          <a
+          </div>
+          
+          <Link
             href={"/"}
             onClick={handleClickClose}
-            style={{ width: "110px", height: "116px", margin: "0 auto" }}
           >
             <Image
               src={logo}
               alt="Logo"
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "110px", height: "116px", margin: "0 auto" }}
+              width={110}
+              height={116}
             />
-          </a>
-          <div>
+          </Link>
+          <div className={style['content-wrap']}>
             <nav>
-              <ul>
+              <ul className={style.list}>
                 {NAV_ITEMS.map(({ path, name }, idx) => (
                   <li key={idx}>
-                    <a href={path} onClick={handleClickClose}>
+                    <Link href={path} onClick={handleClickClose} className={style['menu-link']}>
                       {name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
             </nav>
-            <div>
+            <div style={{
+              fontSize: "20px"
+            }}>
               <Join />
             </div>
           </div>

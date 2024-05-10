@@ -7,12 +7,12 @@ import logo from "../../../assets/main-logo.svg";
 import Join from "../Join/Join.jsx";
 import Sidebar from "../Sidebar/Sidebar.jsx";
 import Image from "next/image";
+import Link from "next/link";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleClickOnMenu = (e) => {
+  const handleClickOnMenu = () => {
     const backdrop = document.getElementById("backdrop");
-    console.log(e.target)
     if (!isMenuOpen) {
       backdrop.style.left = "0px";
       setIsMenuOpen(!isMenuOpen);
@@ -31,36 +31,34 @@ function Header() {
 
   return (
     <>
-      {/* <Sidebar handleClickClose={handleClickOnMenu} /> */}
-      {isMenuOpen && <Sidebar handleClickClose={handleClickOnMenu} />}
-      {console.log(isMenuOpen)}
+      <Sidebar handleClickClose={handleClickOnMenu} />
       <header className={style.hd}>
         <div className="container">
           <div className={style["header-content"]}>
             <div className={style["logo-wrap"]}>
-              <div className={style['burger-menu']}>
+              <div className={style['burger-menu']} onClick={handleClickOnMenu}>
                 <IoMenuOutline size={30} stroke="#fff"/>
               </div>
               
-              <a href={"/"} className={style["main-link"]} onClick={handleClickOnMenu} style={{width: "44px", height: "50px" }}>
+              <Link href={"/"} className={style["main-link"]} onClick={handleClickOnMenu} style={{width: "44px", height: "50px" }}>
                 <Image src={logo} alt="Logo" style={{width: "100%", height: "100%"}}></Image>
-              </a>
+              </Link>
             </div>
             <nav className={style.nav}>
               <ul className={style["nav-list"]}>
                 {NAV_ITEMS.map(({ path, name }, idx) => (
                   <li className={style.item} key={idx}>
-                    <a className={style["header-link"]} href={path}>
+                    <Link className={style["header-link"]} href={path}>
                       {name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
             </nav>
             <div className={style.contacts}>
-              <a href="tel:+380983147401" className={style["link-tel"]}>
+              <Link href="tel:+380983147401" className={style["link-tel"]}>
                 098 314 7401
-              </a>
+              </Link>
               <div className={style["join-wrap"]}>
                 <Join />
               </div>
