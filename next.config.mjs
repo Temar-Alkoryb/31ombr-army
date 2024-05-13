@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: "/31ombr-army",
-  output: "export",
+  // output: "export",
   reactStrictMode: true,
 };
 
