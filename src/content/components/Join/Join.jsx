@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Join.module.css";
 function Join() {
   return (
-    <a href={"#"} className={style.link}>
+    <a href={"#followUs"} className={style.link}>
       Долучитися
     </a>
   );

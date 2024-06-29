@@ -24,6 +24,7 @@ function Footer() {
           </a>
 
           <div className={style.contacts}>
+            <a href="https://army.gov.ua/" className={style["link-simple"]} style={{ alignSelf: 'end' }} target="_blank">army.gov.ua</a>
             <a
               href={"https://www.facebook.com/31ombr"}
               className={style["hover-link"]}

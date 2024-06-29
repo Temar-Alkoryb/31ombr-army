@@ -2,7 +2,7 @@ import style from "./LightJoin.module.css";
 
 function LightJoin() {
   return (
-    <a href="#" className={style["light-link"]}>
+    <a href="#followUs" className={style["light-link"]}>
       Долучитися
     </a>
   );

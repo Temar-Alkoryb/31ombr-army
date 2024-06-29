@@ -45,3 +45,11 @@ import fireSparks from "../../assets/fire-sparks.jpg" */
     display: block;
   }
 }
+
+.link-simple {
+  color: #eee;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+}

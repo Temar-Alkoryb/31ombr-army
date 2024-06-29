@@ -1,0 +1,28 @@
+.section {
+    width: 100%;
+    position: relative;
+    background-color: #151a1a;
+    padding: 50px 0;
+  }
+
+  .sec-title {
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #f5eaca;
+  }
+
+  .links {
+    padding: 2px 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .links a {
+    color: #eee;
+    max-width: 200px;
+    font-family: "UAF", sans-serif;
+  }
